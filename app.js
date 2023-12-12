@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.end('OK')
 })
 
-app.use('/berita', router)
+app.use('/menu', router)
 
 app.use((err, req, res, next) =>{
     const status = err.statusCode || 500
